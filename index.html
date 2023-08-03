@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,6 +69,7 @@
             position: absolute;
             top: 100px;
             z-index: 3;
+            left: calc(50% - 100px); /* Posisikan gambar profil secara horizontal di tengah */
         }
 
         section {
@@ -83,16 +84,9 @@
             background-color: rgba(255, 255, 255, 0.7); /* Tambahkan warna putih dengan opasitas 70% */
         }
 
-        #about {
-            /* Hapus properti background-image, background-size, dan background-position */
-        }
-
-        #projects {
-            /* Hapus properti background-image, background-size, dan background-position */
-        }
-
-        #contact {
-            /* Hapus properti background-image, background-size, dan background-position */
+        /* Hapus background-image, background-size, dan background-position */
+        #about, #projects, #contact {
+            background: none;
         }
 
         /* Gaya CSS untuk animasi api (jika Anda telah menambahkannya sebelumnya) */
@@ -174,7 +168,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2023 Portofolio Imanuel Yovi. Dibuat dengan &hearts; dan HTML.</p>
+        <!-- Hapus hak cipta -->
     </footer>
 </body>
 </html>
