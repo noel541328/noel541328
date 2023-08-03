@@ -1,41 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
-    <style>
-        /* gaya CSS untuk tampilan depan */
-        /* ... */
-    </style>
-</head>
-<body>
-    <!-- Tampilan depan (halaman utama) -->
-    <div class="front-page">
-        <!-- ... Konten tampilan depan di sini ... -->
-    </div>
-
-    <!-- Bagian konten portofolio Anda yang sudah ada tetap ada di sini -->
-    <!-- ... -->
-
-    <footer>
-        <!-- ... Konten footer tetap ada di sini ... -->
-    </footer>
-</body>
-</html>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Saya</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
         }
 
         header {
@@ -45,20 +18,35 @@
             text-align: center;
         }
 
-        h1 {
-            margin: 0;
-        }
-
-        nav {
-            background-color: #444;
-            padding: 10px;
+        .welcome-section {
+            background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpaperaccess.com%2Fattack-on-titans-4k&psig=AOvVaw1HqTi9LE2h11grcyeRg3Cp&ust=1691110021984000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNDXmvShv4ADFQAAAAAdAAAAABAD'); /* Ganti dengan URL gambar latar belakang yang Anda inginkan */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #fff;
             text-align: center;
         }
 
-        nav a {
+        .welcome-section h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .welcome-section p {
+            font-size: 1.5rem;
+        }
+
+        .welcome-section a {
+            background-color: #333;
             color: #fff;
             text-decoration: none;
-            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
         }
 
         section {
@@ -73,10 +61,6 @@
             color: #fff;
             padding: 10px;
             text-align: center;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
         }
     </style>
 </head>
@@ -84,29 +68,38 @@
     <header>
         <h1>Portofolio Saya</h1>
     </header>
-    <nav>
-        <a href="#about">Tentang Saya</a>
-        <a href="#projects">Proyek</a>
-        <a href="#contact">Kontak</a>
-    </nav>
+
+    <!-- Tampilan utama (welcome section) -->
+    <div class="welcome-section">
+        <h1>Selamat Datang di Portofolio Saya</h1>
+        <p>Saya adalah seorang web developer kreatif</p>
+        <a href="#about">Pelajari lebih lanjut</a>
+    </div>
+
+    <!-- Bagian "Tentang Saya" -->
     <section id="about">
         <h2>Tentang Saya</h2>
-        <p>Halo, perkenalkan nama saya Imanuel Yovi Anggoro Putra dari SMK Negeri 2 Semarang.</p>
-        <p>Tujuan saya belajar bahasa pemrograman yaitu supaya saya dapat menguasai bahasa pemrograman</p>
+        <p>Nama saya Imanuel Yovi Anggoro Putra.</p>
+        <p>Saya tinggal di Semarang.</p>
+        <p>Saya ingin menguasai bahasa pemrograman.</p>
     </section>
+
+    <!-- Bagian "Proyek" -->
     <section id="projects">
         <h2>Proyek</h2>
-        <p>Belajar bahasa pemrograman menggunakan VS Code.</p>
-        <p>Membuat game simple dengan menggunakan aplikasi Greenfoot.</p>
-        <p>Belajar bahasa pemrograman menggunakan NetBeans.</p>
-        <p>Membuat portofolio ini.</p>
+        <p>Membuat game simple menggunakan Greenfoot.</p>
+        <p>Membuat film pendek</p>
     </section>
+
+    <!-- Bagian "Kontak" -->
     <section id="contact">
         <h2>Kontak</h2>
         <p>Hubungi saya di imanuelyovisemarang@gmail.com</p>
     </section>
+
     <footer>
-        <p>Hak Cipta &copy; 2023 Portofolio Saya. Dibuat dengan ❤️ dan HTML.</p>
+        <p>Hak Cipta &copy; 2023 Portofolio Imanuel Yovi. Dibuat dengan ❤️ dan HTML.</p>
     </footer>
 </body>
 </html>
+
