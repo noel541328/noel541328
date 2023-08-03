@@ -9,8 +9,8 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins dari Google Fonts */
-            background-image: url('https://i.pinimg.com/564x/30/f4/0c/30f40c02566f9981446a10d52ece94bd.jpg'); /* Ganti dengan URL gambar latar belakang untuk elemen body */
+            font-family: 'Poppins', sans-serif;
+            background-image: url('https://i.pinimg.com/564x/80/14/f9/8014f9944b6e31ea8414c828a1eec425.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -21,11 +21,11 @@
             padding: 20px;
             text-align: center;
             position: relative;
-            z-index: 1; /* Atur lapisan untuk header */
+            z-index: 1;
         }
 
         .welcome-section {
-            background-image: url('https://wallpapercave.com/wp/wp6387519.jpg'); /* Ganti dengan URL gambar latar belakang yang Anda inginkan */
+            background-image: url('https://wallpapercave.com/wp/wp6387519.jpg');
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -36,7 +36,7 @@
             color: #fff;
             text-align: center;
             position: relative;
-            z-index: 2; /* Atur lapisan untuk bagian "Selamat Datang" */
+            z-index: 2;
         }
 
         .welcome-section h1 {
@@ -66,7 +66,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             position: absolute;
             top: 100px;
-            z-index: 3; /* Atur lapisan untuk gambar profil */
+            z-index: 3;
         }
 
         section {
@@ -75,7 +75,7 @@
             color: #fff;
             text-align: center;
             position: relative;
-            z-index: 2; /* Atur lapisan untuk bagian konten */
+            z-index: 2;
         }
 
         #about {
@@ -117,6 +117,7 @@
             position: absolute;
             bottom: 0;
             width: 100%;
+            z-index: 4; /* Atur lapisan untuk footer agar tampil di atas background */
         }
     </style>
 </head>
@@ -167,4 +168,3 @@
     </footer>
 </body>
 </html>
-
