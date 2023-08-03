@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             font-family: 'Poppins', sans-serif;
-            background-image: url('https://i.pinimg.com/564x/80/14/f9/8014f9944b6e31ea8414c828a1eec425.jpg');
+            background-image: url('URL_GAMBAR_BACKGROUND');
             background-size: cover;
             background-position: center;
             position: relative;
@@ -39,7 +39,6 @@
             text-align: center;
             position: relative;
             z-index: 2;
-            margin-bottom: 250px; /* Tambahkan margin bawah untuk memberi ruang pada teks */
         }
 
         .welcome-section h1 {
@@ -68,9 +67,8 @@
             border: 5px solid #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             position: absolute;
-            top: 120px; /* Ubah posisi vertikal foto profil */
+            top: 100px;
             z-index: 3;
-            left: calc(50% - 100px); /* Posisikan gambar profil secara horizontal di tengah */
         }
 
         section {
@@ -82,13 +80,19 @@
             z-index: 2;
             border: 2px solid #fff; /* Tambahkan bingkai pada setiap section */
             border-radius: 10px; /* Tambahkan radius border untuk membuatnya lebih rapi */
-            background-color: rgba(255, 255, 255, 0.8); /* Tambahkan warna putih dengan opasitas 80% */
-            opacity: 0.8; /* Efek transparansi */
+            background-color: rgba(255, 255, 255, 0.7); /* Tambahkan warna putih dengan opasitas 70% */
         }
 
-        /* Hapus background-image, background-size, dan background-position */
-        #about, #projects, #contact {
-            background: none;
+        #about {
+            /* Hapus properti background-image, background-size, dan background-position */
+        }
+
+        #projects {
+            /* Hapus properti background-image, background-size, dan background-position */
+        }
+
+        #contact {
+            /* Hapus properti background-image, background-size, dan background-position */
         }
 
         /* Gaya CSS untuk animasi api (jika Anda telah menambahkannya sebelumnya) */
@@ -108,22 +112,6 @@
             .welcome-section p {
                 font-size: 1.2rem;
             }
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            z-index: 4;
-        }
-
-        /* Gaya untuk mengatur font */
-        h1, h2, p, a, footer p {
-            font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
@@ -168,9 +156,5 @@
         <h2>Kontak</h2>
         <p>Hubungi saya di <a href="mailto:imanuelyovisemarang@gmail.com">imanuelyovisemarang@gmail.com</a></p>
     </section>
-
-    <footer>
-        <!-- Hapus hak cipta -->
-    </footer>
 </body>
 </html>
