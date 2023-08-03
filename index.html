@@ -13,6 +13,8 @@
             background-image: url('https://i.pinimg.com/564x/80/14/f9/8014f9944b6e31ea8414c828a1eec425.jpg');
             background-size: cover;
             background-position: center;
+            position: relative; /* Tambahkan posisi relatif pada body */
+            min-height: 100vh; /* Gunakan min-height untuk memastikan footer berada di bagian bawah halaman */
         }
 
         header {
@@ -117,7 +119,6 @@
             position: absolute;
             bottom: 0;
             width: 100%;
-            z-index: 4; /* Atur lapisan untuk footer agar tampil di atas background */
         }
     </style>
 </head>
@@ -162,9 +163,8 @@
         <h2>Kontak</h2>
         <p>Hubungi saya di imanuelyovisemarang@gmail.com</p>
     </section>
-
-    <footer>
-        <p>Hak Cipta &copy; 2023 Portofolio Imanuel Yovi. Dibuat dengan ❤️ dan HTML.</p>
-    </footer>
 </body>
+<footer>
+    <p>Hak Cipta &copy; 2023 Portofolio Imanuel Yovi. Dibuat dengan ❤️ dan HTML.</p>
+</footer>
 </html>
