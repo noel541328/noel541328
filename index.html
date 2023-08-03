@@ -9,6 +9,9 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            background-image: url('https://i.pinimg.com/564x/fe/c8/8c/fec88c0f945b003e5cb180416f0526f9.jpg'); /* Ganti dengan URL gambar latar belakang untuk elemen body */
+            background-size: cover;
+            background-position: center;
         }
 
         header {
@@ -16,6 +19,8 @@
             color: #fff;
             padding: 20px;
             text-align: center;
+            position: relative;
+            z-index: 1; /* Atur lapisan untuk header */
         }
 
         .welcome-section {
@@ -29,6 +34,8 @@
             flex-direction: column;
             color: #fff;
             text-align: center;
+            position: relative;
+            z-index: 2; /* Atur lapisan untuk bagian "Selamat Datang" */
         }
 
         .welcome-section h1 {
@@ -58,17 +65,58 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             position: absolute;
             top: 100px;
+            z-index: 3; /* Atur lapisan untuk gambar profil */
         }
 
         section {
             padding: 20px;
             margin: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color: #fff;
+            text-align: center;
+            position: relative;
+            z-index: 2; /* Atur lapisan untuk bagian konten */
+        }
+
+        #about {
+            /* Hapus properti background-image, background-size, dan background-position */
+        }
+
+        #projects {
+            /* Hapus properti background-image, background-size, dan background-position */
+        }
+
+        #contact {
+            /* Hapus properti background-image, background-size, dan background-position */
         }
 
         /* Gaya CSS untuk animasi api (jika Anda telah menambahkannya sebelumnya) */
 
+        /* Media Query untuk perangkat dengan lebar layar kurang dari atau sama dengan 768px */
+        @media screen and (max-width: 768px) {
+            .profile-image {
+                width: 150px;
+                height: 150px;
+                top: 50px;
+            }
+
+            .welcome-section h1 {
+                font-size: 3rem;
+            }
+
+            .welcome-section p {
+                font-size: 1.2rem;
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
